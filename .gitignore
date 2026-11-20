@@ -1,0 +1,17 @@
+# This repository is public. Git ignores every path that is not listed below, so a stray
+# "git add ." cannot pick up internal files. To add a feed, add its folder and files here
+# AND to .github/allowed-paths.txt (the repo-checks workflow enforces that list).
+/*
+!/.gitignore
+!/.github/
+!/README.md
+!/LICENSE
+!/SECURITY.md
+
+!/sso-vishing/
+/sso-vishing/*
+!/sso-vishing/README.md
+!/sso-vishing/CHANGELOG.md
+!/sso-vishing/doppel-sso-vishing.csv
+
+.DS_Store

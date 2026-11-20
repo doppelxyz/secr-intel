@@ -1,0 +1,61 @@
+name: repo-checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  # The job name must stay "repo-checks": the main-branch ruleset requires a check with that name.
+  repo-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
+
+      - name: Only allowlisted files are tracked
+        run: |
+          git ls-files | sort > "$RUNNER_TEMP/tracked.txt"
+          grep -v -e '^#' -e '^$' .github/allowed-paths.txt | sort > "$RUNNER_TEMP/allowed.txt"
+          extra=$(comm -23 "$RUNNER_TEMP/tracked.txt" "$RUNNER_TEMP/allowed.txt")
+          if [ -n "$extra" ]; then
+            echo "These files are not on .github/allowed-paths.txt:"
+            echo "$extra"
+            exit 1
+          fi
+          echo "ok: every tracked file is allowlisted"
+
+      - name: SSO Vishing CSV shape
+        run: |
+          python3 - <<'EOF'
+          import csv, re, sys
+          path = "sso-vishing/doppel-sso-vishing.csv"
+          header = ["indicator", "value", "type", "confidence_tier", "status_registration", "registered_on",
+                    "registrar", "root_wildcard_dns", "first_seen", "date_added", "source_names", "attribution",
+                    "domain_template", "example", "asn", "asn_org", "ip_addresses", "priority_block",
+                    "lifecycle_status", "pattern_domains"]
+          fails = []
+          with open(path, encoding="utf-8", newline="") as f:
+              rows = list(csv.reader(f))
+          if rows[0] != header:
+              fails.append(f"header differs from the published column list: {rows[0]}")
+          for n, r in enumerate(rows[1:], start=2):
+              if len(r) != len(header):
+                  fails.append(f"line {n}: {len(r)} fields, expected {len(header)}")
+                  continue
+              d = dict(zip(header, r))
+              if d["type"] not in ("domain", "domain pattern"):
+                  fails.append(f"line {n}: type {d['type']!r} is not domain or domain pattern")
+              if d["confidence_tier"] not in ("T1", "T2"):
+                  fails.append(f"line {n}: confidence_tier {d['confidence_tier']!r} is not T1 or T2")
+              if "." in d["indicator"].replace("[.]", ""):
+                  fails.append(f"line {n}: indicator is not fully defanged: {d['indicator']}")
+              if d["indicator"].replace("[.]", ".") != d["value"]:
+                  fails.append(f"line {n}: indicator and value do not match")
+          for line in fails[:50]:
+              print("FAIL", line)
+          print(f"{len(rows) - 1} rows checked, {len(fails)} failures")
+          sys.exit(1 if fails else 0)
+          EOF

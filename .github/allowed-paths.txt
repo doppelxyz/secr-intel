@@ -1,0 +1,12 @@
+# Every file this public repository may contain, one path per line.
+# The repo-checks workflow fails if any tracked file is not listed here.
+.gitignore
+.github/allowed-paths.txt
+.github/workflows/repo-checks.yml
+.github/ISSUE_TEMPLATE/config.yml
+README.md
+LICENSE
+SECURITY.md
+sso-vishing/README.md
+sso-vishing/CHANGELOG.md
+sso-vishing/doppel-sso-vishing.csv

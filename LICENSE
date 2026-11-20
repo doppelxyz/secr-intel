@@ -1,0 +1,283 @@
+LICENSE AGREEMENT
+
+Last Updated: November 19, 2026
+
+THIS LICENSE AGREEMENT (THIS “AGREEMENT”) IS A BINDING CONTRACT BETWEEN DOPPEL
+INC., A DELAWARE CORPORATION (“DOPPEL”), AND THE INDIVIDUAL, COMPANY OR OTHER
+ENTITY THAT DOWNLOADS OR USES THE FEED (“RECIPIENT”). BY DOWNLOADING OR USING
+THE FEED, RECIPIENT AGREES TO THIS AGREEMENT, AND ANY INDIVIDUAL DOING SO ON
+BEHALF OF AN ENTITY REPRESENTS THAT HE OR SHE IS AUTHORIZED TO BIND IT. IF
+RECIPIENT DOES NOT AGREE, OR DOES NOT HAVE SUCH AUTHORITY, IT MUST NOT DOWNLOAD,
+ACCESS OR USE THE FEED.
+
+THE FEED IS FREE AND PROVIDED “AS IS.” SECTIONS 5 AND 6 SIGNIFICANTLY LIMIT
+DOPPEL’S RESPONSIBILITY TO RECIPIENT.
+
+1. The Feed
+
+1.1 Feed. The “Feed” is the threat intelligence feed Doppel makes available
+    through its public GitHub repository at
+    https://github.com/doppelxyz/secr-intel or any alternative location (the
+    “Repository”). It includes the intelligence threat data and indicators of
+    malicious activity in the feed, such as domains, URLs, and IP addresses,
+    together with related metadata (“Feed Data”), and all related documentation
+    and source notices. “Use” of the Feed includes downloading, copying,
+    storing, and processing it.
+
+1.2 Updates. Doppel may update the Feed from time to time but is not required to
+    do so. Any update is part of the Feed.
+
+2. Permitted Use
+
+2.1 License. Subject to this Agreement, Doppel grants Recipient a limited,
+    non-exclusive, non-transferable, non-sublicensable, revocable, royalty-free
+    license to use the Feed solely for Recipient’s internal defensive
+    cybersecurity purposes (the “Permitted Purpose”), which consists of:
+
+    (a) creating and implementing internal security rules, configurations,
+        alerts, detections, blocking decisions, risk determinations, and other
+        defensive measures (“Defensive Measures”) to protect the systems,
+        networks, personnel, and data of Recipient and its related entities that
+        control, are controlled by, or are under common control with Recipient
+        (“Affiliates”); and
+
+    (b) loading the Feed into Recipient’s own security tools (such as SIEM,
+        SOAR, firewall, IDS/IPS, endpoint, and DNS security tools) for that
+        purpose.
+
+2.2 Affiliates and Service Providers. An Affiliate or contractor of Client
+    providing security services to Recipient or its Affiliates (“Service
+    Providers”) may use the Feed for the Permitted Purpose on Recipient’s
+    behalf, provided such Service Provider is bound by written terms at least as
+    protective of the Feed as this Agreement and doesn’t use the Feed for its
+    own benefit or for the benefit of any other customer (except to pursuant to
+    its own written license obtained from Doppel). Recipient is responsible for
+    their compliance. Use by Service Providers under this Section is not a
+    disclosure to a third party in violation of this Agreement.
+
+2.3 No Other Use. Any use of the Feed or Feed Data not specified herein is
+    prohibited, including any offensive or “hack back” activity against systems
+    or persons identified in the Feed.
+
+3. Attribution
+
+3.1 Source Notices. Recipient must keep any attribution, proprietary,
+    disclaimer, or source notice included with the Feed, including any
+    attribution statement specified in the Repository (“Attribution Notice”) in
+    all copies of Feed Data, including within security tools to the extent
+    technically possible.
+
+3.2 Attribution to Doppel. Whenever Feed Data is shown to any user (for example,
+    in a dashboard, alert, or report), Recipient must, to the extent technically
+    possible, clearly identify Doppel as the source, using the Attribution
+    Notice in the Repository or, if none, the statement “Source: Doppel Threat
+    Intelligence Feed.”
+
+3.3 No Endorsement. Recipient must not suggest that Doppel endorses or is
+    affiliated with Recipient or its products or services, or use Doppel’s name
+    or marks except for the attribution required above.
+
+4. Restrictions
+
+4.1 Prohibited Actions. Except as permitted in Section 2 or 4.2, Recipient must
+    not, and must not allow others to:
+
+    (a) sell, license, or otherwise commercialize the Feed or a substantial part
+        of it, whether taken at once or over time, or any part from which a
+        substantial part of the Feed could be reconstructed (“Material Portion”)
+
+    (b) repackage the Feed or a Material Portion of it as part of any product,
+        service, or feed offered to others, whether or not for a fee;
+
+    (c) include Feed Data in, or use it to build, populate, enrich, improve or
+        validate any separate database, dataset, or feed, that is made available
+        to others or used for commercial purposes outside the Permitted Purpose;
+
+    (d) input the Feed Data into or use it to develop, train, tune, fine tune,
+        refine, improve or evaluate any machine learning or other artificial
+        intelligence technology or model that is made available to others or
+        used for commercial purposes outside the Permitted Purpose;
+
+    (e) share or disclose the Feed or a Material Portion of it with any third
+        party, including by posting it publicly or to any repository or sharing
+        platform;
+
+    (f) remove, circumvent or alter any Attribution Notice or misrepresent the
+        source of Feed Data; or
+
+    (g) use the Feed or Feed Data in violation of law or to build, improve or
+        offer any product or service that competes with Doppel.
+
+4.2 Defensive Measures Allowed. Nothing in this Agreement prevents Recipient
+    from using the Feed to create and implement Defensive Measures in accordance
+    with Section 2.1, as long as Recipient does not disclose or share the Feed
+    or a Material Portion of it with any third party in doing so. Incidental
+    disclosure of individual indicators in the normal operation of a Defensive
+    Measure (for example, a block page naming a blocked domain) is permitted.
+
+4.3 Legally Required Disclosure. Recipient may disclose Feed Data to the extent
+    required by law or court order, after giving Doppel prompt notice where
+    legally permitted and disclosing only the minimum Feed Data legally
+    required.
+
+5. Disclaimer of Warranties
+
+5.1 Nature of the Feed. Recipient acknowledges that threat intelligence is
+    time-sensitive and imperfect. Indicators may become outdated or benign, and
+    Doppel’s review before each release does not guarantee that any Feed Data is
+    accurate, complete, current, or free of false positives or false negatives.
+    Recipient is solely responsible for independently evaluating Feed Data and
+    for its own Defensive Measures and decisions.
+
+5.2 DISCLAIMER. THE FEED IS PROVIDED “AS IS,” “AS AVAILABLE” AND “WITH ALL
+    FAULTS.” TO THE MAXIMUM EXTENT PERMITTED BY LAW, DOPPEL EXPRESSLY DISCLAIMS
+    ALL WARRANTIES, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING WARRANTIES OF
+    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT,
+    ACCURACY, AND COMPLETENESS, AND ANY WARRANTIES ARISING FROM COURSE OF
+    DEALING, COURSE OF PERFORMANCE, OR USAGE OF TRADE. DOPPEL DOES NOT WARRANT
+    THAT THE FEED WILL BE ACCURATE, COMPLETE, CURRENT, OR FREE OF ERRORS OR
+    FALSE POSITIVES, THAT IT WILL IDENTIFY ANY PARTICULAR THREAT, THAT ANY
+    DEFENSIVE MEASURE BASED ON IT WILL PREVENT ANY SECURITY INCIDENT, OR THAT
+    ITS USE WILL NOT DISRUPT LEGITIMATE ACTIVITY.
+
+5.3 NO DUTY TO UPDATE. DOPPEL HAS NO OBLIGATION TO UPDATE, CORRECT, OR MAINTAIN
+    THE FEED, TO REMOVE ANY INDICATOR THAT HAS BECOME INACCURATE OR BENIGN, OR
+    TO NOTIFY RECIPIENT OF ANY ERROR OR CHANGE. Any person who believes an
+    indicator in the Feed has been listed in error may submit a request for
+    review to secr@doppel.com with supporting information. Doppel shall have no
+    obligation to respond to any such request, but may, without limiting
+    anything in this Section, consider such request and may, in its sole
+    discretion, remove or modify any indicator.
+
+5.4 THIRD-PARTY PLATFORMS. DOPPEL IS NOT RESPONSIBLE FOR GITHUB OR ANY OTHER
+    PLATFORM HOSTING THE REPOSITORY OR FOR ANY INCOMPATIBILITY OF THE FEED WITH
+    ANY SECURITY TOOL
+
+6. Limitation of Liability
+
+6.1 NO LIABILITY FOR USE OR RELIANCE. TO THE MAXIMUM EXTENT PERMITTED BY LAW,
+    RECIPIENT ASSUMES ALL RISK OF USING OR RELYING ON THE FEED, AND DOPPEL HAS
+    NO LIABILITY FOR ANY LOSS ARISING FROM (A) ANY SECURITY INCIDENT OR BREACH;
+    (B) THE FAILURE OR INEFFECTIVENESS OF ANY DEFENSIVE MEASURE OR SECURITY
+    TOOL; (C) ANY ACTION TAKEN OR NOT TAKEN BASED ON THE FEED, INCLUDING
+    BLOCKING LEGITIMATE ACTIVITY OR ANY CLAIM BY A PERSON WHOSE DOMAIN OR IP
+    ADDRESS APPEARS IN THE FEED; OR (D) ANY ERROR IN, OR FAILURE TO UPDATE, THE
+    FEED.
+
+6.2 EXCLUDED DAMAGES. TO THE MAXIMUM EXTENT PERMITTED BY LAW, DOPPEL AND ITS
+    AFFILIATES, PERSONNEL, AND LICENSORS (THE “DOPPEL PARTIES”) WILL NOT BE
+    LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE
+    DAMAGES, OR FOR LOST PROFITS, LOST DATA, BUSINESS INTERRUPTION, OR INCIDENT
+    RESPONSE COSTS ARISING OUT OF OR RELATING TO THIS AGREEMENT OR THE FEED,
+    UNDER ANY THEORY OF LIABILITY, EVEN IF ADVISED OF THEIR POSSIBILITY AND EVEN
+    IF ANY LIMITED REMEDY FAILS OF ITS ESSENTIAL PURPOSE.
+
+6.3 CAP. TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE DOPPEL PARTIES WILL HAVE NO
+    LIABILITY OF ANY KIND ARISING FROM THIS AGREEMENT OR THE FEED, UNDER ANY
+    THEORY. IF, DESPITE THE FOREGOING, A DOPPEL PARTY IS FOUND LIABLE, THE
+    DOPPEL PARTIES' TOTAL LIABILITY TO RECIPIENT AND ITS AFFILIATES, FOR ALL
+    CLAIMS COMBINED, WILL NOT EXCEED US$100.
+
+6.4 Basis of the Bargain. Recipient acknowledges that Doppel makes the Feed
+    available free of charge, that the disclaimers in Section 5 and the
+    limitations in this Section 6 are an essential basis of the bargain between
+    the parties, and that Doppel would not make the Feed available without them.
+
+7. Recipient Responsibility; Indemnity
+
+7.1 Responsibility. Recipient is solely responsible for its use of the Feed, for
+    the configuration and operation of its security tools and Defensive
+    Measures, and for complying with applicable laws, including export control
+    and sanctions laws.
+
+7.2 Indemnity. Recipient will defend, indemnify, and hold harmless the Doppel
+    Parties from any third-party claim, and related losses, damages,
+    liabilities, and costs (including reasonable attorneys’ fees), arising from
+    Recipient’s or its Affiliates’ or Service Providers’ use of the Feed
+    (including any Defensive Measure or other action taken based on the Feed) or
+    breach of this Agreement.
+
+8. Ownership
+
+8.1 Doppel’s Rights. As between the parties, Doppel and its licensors own the
+    Feed, including any rights in its selection and arrangement of Feed Data and
+    other intellectual property rights in the Feed and Feed Data. Except for the
+    limited license in Section 2, this Agreement grants Recipient no rights in
+    the Feed or Feed Data in any Doppel intellectual property, and Doppel
+    reserves all other rights. Publishing the Feed in a public repository does
+    not place it in the public domain or under any open-source license that
+    applies to other content in the Repository.
+
+8.2 Feedback. If Recipient provides Doppel with any suggestions, comments,
+    false-positive reports, or other feedback regarding the Feed (“Feedback”),
+    Doppel may use such Feedback for any purpose without restriction or
+    obligation to Recipient.
+
+9. Changes and Termination
+
+9.1 Changes to the Feed. Doppel may change, suspend, or discontinue the Feed at
+    any time, with or without notice and without liability.
+
+9.2 Termination. This Agreement starts when Recipient first downloads or uses
+    the Feed. Recipient may end it by stopping all use of the Feed. Doppel may
+    terminate it at any time by notice (including by posting in the Repository)
+    or by discontinuing the Feed. The Agreement ends automatically if Recipient
+    breaches Section 2, 3, or 4.
+
+9.3 Effect of Termination. On termination, Recipient must stop using the Feed
+    and delete all copies of Feed Data, except copies in routine backups (which
+    remain subject to this Agreement until deleted) and Defensive Measures
+    already in place that do not contain a Material Portion of the Feed.
+    Sections 4 through 8, this Section 9.3, and Section 10 survive termination.
+
+10. General
+
+10.1 Changes to this Agreement. Doppel may update this Agreement by posting a
+     new version in the Repository with a new “Last Updated” date. Continued use
+     of the Feed after posting means Recipient accepts the updated version. If
+     Recipient does not agree to the revised terms, Recipient must cease using
+     the Feed.
+
+10.2 Governing Law. This Agreement is governed by the laws of the State of
+     California, excluding its conflict-of-laws rules. The UN Convention on
+     Contracts for the International Sale of Goods does not apply. Each party
+     irrevocably submits to the exclusive jurisdiction of the state and federal
+     courts located in Orange County, California for any dispute arising out of
+     or relating to this Agreement, the Feed or Feed Data, and waives any
+     objection to venue in such courts.
+
+10.3 Injunctive Relief. Recipient acknowledges that any breach of Section 3,
+     Section 4, or Section 8 may cause Doppel irreparable harm for which
+     monetary damages would be inadequate, and that Doppel is entitled to seek
+     injunctive or other equitable relief to prevent or remedy any such breach,
+     without the necessity of posting a bond or proving actual damages, in
+     addition to any other remedies available at law or in equity, in any court
+     of competent jurisdiction.
+
+10.4 Relationship. The parties are independent contractors. This Agreement
+     creates no partnership, joint venture, fiduciary, franchise, or agency
+     relationship.
+
+10.5 Assignment. Recipient may not assign or transfer this Agreement or any of
+     its rights or obligations hereunder, whether by operation of law, change of
+     control, merger, or otherwise, without Doppel’s prior written consent, and
+     any attempted assignment or transfer in violation of this Section 10.5 is
+     void. Doppel may freely assign this Agreement. This Agreement binds and
+     benefits the parties and their respective permitted successors and assigns.
+
+10.6 Notices. Doppel may give notice by posting in the Repository or by email or
+     other contact point provided by Recipient. Recipient must send notices to
+     legal@doppel.com.
+
+10.7 Other Terms. No failure or delay by Doppel in exercising any right under
+     this Agreement operates as a waiver of that right. If any provision of this
+     Agreement is held invalid or unenforceable, that provision will be enforced
+     to the maximum extent permissible and the remaining provisions will remain
+     in full force and effect. This Agreement is the entire agreement regarding
+     the Feed, unless Doppel and Recipient sign a separate agreement that
+     expressly covers the Feed, which will control in case of conflict. Any
+     purchase order, click-through, or other terms provided by Recipient are
+     rejected and have no effect. Recipient agrees that this Agreement is
+     accepted, and has the same force and effect as a manual signature, upon
+     Recipient’s access to or use of the Feed. The words “include,” “includes,”
+     and “including” are deemed to be followed by “without limitation.”
