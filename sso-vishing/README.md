@@ -61,7 +61,7 @@ Monitoring and detection run multiple times a day. New findings are published as
 | `ip_addresses` | IP addresses the domain resolved to, where they are safe to publish. |
 | `priority_block` | `yes` for roots worth blocking first. |
 | `lifecycle_status` | Whether the infrastructure is currently `active`, `inactive`, `suspended`, and so on. |
-| `pattern_domains` | For a `domain pattern` row: how many confirmed domains it stands for. |
+| `pattern_domains` | For a `domain pattern` row: how many confirmed domains in this feed it stands for. `0` means the pattern was published by the source credited in `source_names`, and no domain in this feed matches it yet. |
 
 Source credit and attribution are kept separate on purpose. `source_names` says who reported the infrastructure. `attribution` says which actor or cluster a reporter associated with it.
 
