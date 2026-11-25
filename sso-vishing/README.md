@@ -2,7 +2,7 @@
 
 An open, curated feed of internet infrastructure used in passkey and single-sign-on (SSO) enrollment voice-phishing (vishing) campaigns. Maintained by the Doppel SECR (Social Engineering Counter-intelligence and Research) team.
 
-TLP:CLEAR. Free to use, including inside the security operations of commercial organizations. Attribution required. Not for resale or repackaging as a commercial product. See [LICENSE](../LICENSE).
+TLP:CLEAR. Free for your organization's internal defensive security use, with attribution to Doppel. It may not be resold, repackaged, or re-shared as another feed or dataset. See [LICENSE](../LICENSE) for the full terms.
 
 ## What this is
 
